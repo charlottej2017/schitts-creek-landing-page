@@ -28,6 +28,10 @@ header {
   align-items: center;
 }
 
+header img {
+  width: 1468px;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -139,7 +143,7 @@ button.btn.btn-secondary.btn-sm {
 .column-third {
   max-width: 33%;
   flex-grow: 1;
-  margin: 15px;
+  margin: 10px;
   box-sizing: border-box;
 }
 
@@ -193,6 +197,11 @@ footer .column-third p {
   font-size: 15px;
   line-height: 15px;
   margin: 40px 0;
+}
+
+footer .column-third img {
+  width: 250px;
+  height: 200px;
 }
 
 footer .column-cont {
