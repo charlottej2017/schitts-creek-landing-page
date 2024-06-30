@@ -25,7 +25,7 @@ header {
   display: flex;
   min-height: 800px;
   background: no-repeat;
-  align-items: center;
+  justify-content: center;
 }
 
 header img {
@@ -173,7 +173,9 @@ button.btn.btn-secondary.btn-sm {
   padding: 50px 100px;
 }
 
-.pic-container {
+.pic-container img {
+  width: 250px;
+  height: 200px;
 }
 
 /* final blurb */
@@ -197,6 +199,11 @@ footer .column-third p {
   font-size: 15px;
   line-height: 15px;
   margin: 40px 0;
+}
+
+.watch img {
+  width: 250px;
+  height: 200px;
 }
 
 footer .column-third img {
