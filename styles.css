@@ -191,8 +191,13 @@ button.btn.btn-secondary.btn-sm {
 /*footer*/
 
 footer {
+  display: flex;
   background-color: #000000;
   color: #fff;
+}
+footer .column-third {
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 footer .column-third p {
@@ -208,7 +213,12 @@ footer .column-third p {
 
 footer .column-third img {
   width: 250px;
-  height: 200px;
+  height: 100px;
+}
+
+.footer .center {
+  display: flex;
+  align-items: center;
 }
 
 footer .column-cont {
