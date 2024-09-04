@@ -102,7 +102,7 @@ h1 {
 }
 
 button.btn.btn-secondary.btn-sm {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 .btn {
@@ -133,8 +133,13 @@ button.btn.btn-secondary.btn-sm {
   font-size: 50px;
 }
 
+.three-columns p {
+  align-items: center;
+}
+
 .column-cont {
   display: flex;
+  justify-content: center;
   padding: 50px 0;
   margin: auto;
   box-sizing: border-box;
@@ -142,7 +147,6 @@ button.btn.btn-secondary.btn-sm {
 
 .column-third {
   max-width: 33%;
-  flex-grow: 1;
   margin: 10px;
   box-sizing: border-box;
 }
@@ -188,19 +192,40 @@ button.btn.btn-secondary.btn-sm {
   box-sizing: border-box;
 }
 
+.grid-contain {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px 160px 10px 160px;
+}
+.grid img {
+  width: 70%;
+  height: 70%; 
+  /* object-fit: cover;  */
+}
+
 /*footer*/
 
 footer {
   display: flex;
+  align-items: center;
   background-color: #000000;
   color: #fff;
 }
-footer .column-third {
-  align-items: flex-end;
-  justify-content: space-between;
+footer .btm-row {
+  width: 100%;
+  padding: 17px 0 0 0;
 }
 
-footer .column-third p {
+
+
+
+footer .signature p {
   font-size: 15px;
   line-height: 15px;
   margin: 40px 0;
@@ -208,7 +233,7 @@ footer .column-third p {
 
 .watch img {
   width: 250px;
-  height: 200px;
+  height: 70px;
 }
 
 footer .column-third img {
@@ -216,18 +241,12 @@ footer .column-third img {
   height: 100px;
 }
 
-.footer .center {
-  display: flex;
-  align-items: center;
-}
 
 footer .column-cont {
   padding: 26px 0;
   align-items: center;
 }
 @media screen and (max-width: 700px) {
-  .center {
-  }
 
   section .column-cont {
     display: flex;
