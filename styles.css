@@ -271,6 +271,11 @@ footer .column-cont {
     flex-wrap: wrap;
   }
 
+  .column-cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   section .column-cont img {
     width: 150px;
     height: 150px;
@@ -300,5 +305,17 @@ footer .column-cont {
     display: flex;
     align-items: center;
     margin: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header img {
+    width: 1024px;
+    height: 1024px;
+  }
+
+  .column-cont {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
