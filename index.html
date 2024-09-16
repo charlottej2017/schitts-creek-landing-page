@@ -43,18 +43,10 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#scenes">Photos</a>
+              <a class="nav-link" href="#scenes">Behind the Scenes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#did-you-know">Did You Know</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://www.hulu.com/series/schitts-creek-a2e7a946-9652-48a8-884b-3ea7ea4de273"
-                target="_blank"
-                >Where to Watch</a
-              >
+              <a class="nav-link" href="#where-to-watch">Where to Watch</a>
             </li>
           </ul>
           <span class="navbar-text"> TV Series 2015–2020 TV-14 </span>
@@ -70,21 +62,21 @@
       </header>
 
       <section>
-        <div class="cta-container">
+          <div class="cta" id="about">
           <div class="cta" id="about">
             <p>IMDB 8.5/10 | Rotten Tomatoes 93%</p>
-            <h3>
-              In the sitcom "Schitt's Creek," a wealthy couple -- video store
-              magnate Johnny and his soap opera star wife Moira -- suddenly find
-              themselves completely broke. With only one remaining asset, a
-              small town called Schitt's Creek, which the Roses bought years
-              earlier as a joke, this once-wealthy couple must give up life as
-              they know it. With their two spoiled children in tow and their
-              pampered lives behind them, the Rose family is forced to face
-              their newfound poverty head-on and come together as a family to
-              survive.
-            </h3>
-          </div>
+        <div class="cta" id="about">
+            <p>IMDB 8.5/10 | Rotten Tomatoes 93%</p>
+          <h3>
+            In the sitcom "Schitt's Creek," a wealthy couple -- video store
+            magnate Johnny and his soap opera star wife Moira -- suddenly find
+            themselves completely broke. With only one remaining asset, a small
+            town called Schitt's Creek, which the Roses bought years earlier as
+            a joke, this once-wealthy couple must give up life as they know it.
+            With their two spoiled children in tow and their pampered lives
+            behind them, the Rose family is forced to face their newfound
+            poverty head-on and come together as a family to survive.
+          </h3>
           <button type="button" class="btn btn-secondary btn-sm">
             <a
               href="https://www.imdb.com/title/tt3526078/?ref_=ttmi_tt"
@@ -128,53 +120,75 @@
         </div>
       </section>
 
-      <div class="know-container" id="did-you-know">
-        <h2>Did You Know...?</h2>
-        <p>Three of the main cast members are related in real life.</p>
-        <img
-          src="https://i.insider.com/5fb2db881c741f0019aca168?width=1200&format=jpeg&auto=webp"
-          alt=""
-        />
-        <p class="sm">Eugene Levy is Dan and Sarah Levy father.</p>
-
-        <p>The role of Alexis Rose was almost played by someone else.</p>
-        <img
-          src="https://i.insider.com/5fb2dd7a1c741f0019aca16f?width=1200&format=jpeg&auto=webp"
-          alt=""
-        />
-        <p class="sm">Abby Elliott was originally going to play Alexis Rose.</p>
-
-        <p>
-          No one knew what Catherine O'Hara's accent for Moira was going to
-          <br />
-          sound like until the first day of shooting.
-        </p>
-        <img
-          src="https://i.insider.com/5fb2dd99402d49001924f39c?width=1200&format=jpeg&auto=webp"
-          alt=""
-        />
-        <p class="sm">
-          Although Dan, Eugene, and the rest of the cast knew that Catherine
-          O'Hara was going to give Moira Rose an accent, they had no idea what
-          the legendary comedic actress was going to come up with until they
-          started shooting.
-        </p>
-
-        <p>
-          Playing Sally Bowles in "Cabaret" was Emily Hampshire's lifelong dream
-          <br />before she got to do it on the show.
-        </p>
-        <img
-          src="https://i.insider.com/5fb2e479402d49001924f3ca?width=1200&format=jpeg&auto=webp"
-          alt=""
-        />
-        <p class="sm">
-          On season five, Stevie took a big leap out of her comfort zone by
-          playing Sally Bowles in "Cabaret,"<br />but in real life, it was a
-          dream come true for actress Emily Hampshire.
-        </p>
+      <div class="grid-contain">
+        <div class="grid" id="scenes">
+          <img src="https://pyxis.nymag.com/v1/imgs/40f/d40/52c017bfea1a4e1141113c4b18f2038e2f-07-schitts-creek-set-visit-3.rhorizontal.w700.jpg" alt="Dan Levy final days on set">
+          <img src="https://imagez.tmz.com/image/99/o/2021/02/24/997fc709dd7e4c3bb7ab1c4ca3525cac_lg.png" alt="Catherine-OHara on set">
+          <img src="https://i.pinimg.com/originals/33/59/39/33593992e1f21360a7c0bb7294d66448.jpg" alt="Eugene and Dan back stage">
+          <img src="https://ew.com/thmb/p_izAzV9ALbuoS74SyOoV59AEy0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2347-530133-2000-7da4d4e91b6b40da8429affdc8e9280e.jpg" alt="Main cast picture">
+        </div> 
       </div>
 
+
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators" id="scenes">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/group-sc-2.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/group-sc-2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/SC-group-pic.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators" id="scenes">
           <button
@@ -245,6 +259,7 @@
             >open sourced on Github</a
           >
         </div>
+
       </div>
     </footer>
     <script
