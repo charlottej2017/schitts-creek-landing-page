@@ -30,7 +30,8 @@ header {
 header img {
   width: 1468px;
 }
-@keyframes sparkle {
+
+/* @keyframes sparkle {
   0% {
     opacity: 0;
     transform: scale(0.5);
@@ -58,7 +59,7 @@ header img {
   animation: sparkle 1.5s infinite;
   top: 0; /* Initial position */
   left: 0; /* Initial position */
-}
+} /*
 
 .sparkle::before {
   content: "✨";
@@ -83,9 +84,9 @@ header img {
   height: 10px; /* Size of the sparkle */
   border-radius: 50%; /* Make it a circle */
   animation: sparkle 1.5s infinite;
-}
+} */
 
-.sparkle::after {
+/* .sparkle::after {
   top: 10%;
   left: 20%;
 }
@@ -117,8 +118,8 @@ header img {
   top: 30%;
   left: 10%;
   animation-delay: 0.8s;
-}
-Here’s how yo .center {
+} */
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
