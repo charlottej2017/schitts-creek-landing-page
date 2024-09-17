@@ -301,6 +301,11 @@ button.btn.btn-secondary.btn-sm {
 }
 
 .carousel.slide {
+
+}
+
+.carousel.slide {
+  width: 900px;
   padding: 20px 0 20px 0;
 }
 
