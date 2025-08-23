@@ -6,6 +6,11 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(255, 238, 215);
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 span.button {
   display: block;
@@ -31,94 +36,6 @@ header img {
   width: 1468px;
 }
 
-/* @keyframes sparkle {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-}
-
-.sparkle {
-  position: relative;
-}
-
-.sparkle::after {
-  content: "✨";
-  position: absolute;
-  width: 5px; /* Size of the sparkle */
-  height: 5px; /* Size of the sparkle */
-  border-radius: 50%; /* Make it a circle */
-  animation: sparkle 1.5s infinite;
-  top: 0; /* Initial position */
-  left: 0; /* Initial position */
-} /*
-
-.sparkle::before {
-  content: "✨";
-  position: absolute;
-  width: 5px; /* Size of the sparkle */
-  height: 5px; /* Size of the sparkle */
-  border-radius: 50%; /* Make it a circle */
-  animation: sparkle 1.5s infinite;
-  top: 10px; /* Slightly offset position */
-  left: 10px; /* Slightly offset position */
-}
-
-.sparkle::after,
-.sparkle::before,
-.sparkle .sparkle1,
-.sparkle .sparkle2,
-.sparkle .sparkle3,
-.sparkle .sparkle4 {
-  content: "✨";
-  position: absolute;
-  width: 10px; /* Size of the sparkle */
-  height: 10px; /* Size of the sparkle */
-  border-radius: 50%; /* Make it a circle */
-  animation: sparkle 1.5s infinite;
-} */
-
-/* .sparkle::after {
-  top: 10%;
-  left: 20%;
-}
-
-.sparkle::before {
-  top: 40%;
-  left: 60%;
-}
-
-.sparkle .sparkle1 {
-  top: 20%;
-  left: 80%;
-  animation-delay: 0.2s;
-}
-
-.sparkle .sparkle2 {
-  top: 60%;
-  left: 30%;
-  animation-delay: 0.4s;
-}
-
-.sparkle .sparkle3 {
-  top: 80%;
-  left: 50%;
-  animation-delay: 0.6s;
-}
-
-.sparkle .sparkle4 {
-  top: 30%;
-  left: 10%;
-  animation-delay: 0.8s;
-} */
 .center {
   display: block;
   margin-left: auto;
@@ -300,6 +217,12 @@ button.btn.btn-secondary.btn-sm {
   padding: 10px 0 0 0;
 }
 
+#carouselExampleIndicators .carousel-item img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
 .carousel.slide {
   padding: 20px 0 20px 0;
 }
@@ -342,6 +265,19 @@ footer .column-cont {
     height: 571px;
   }
 
+  @media (max-width: 576px) {
+    #carouselExampleIndicators .carousel-item img {
+      height: 40vh;
+    }
+  }
+
+  .responsive-card-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
   .cta h3 {
     font-size: 18px;
     line-height: 18px;
@@ -405,5 +341,65 @@ footer .column-cont {
   .column-cont {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  /* ========== Responsive Gallery Grid ========== */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+  }
+
+  /* default: 2-up on small screens */
+  .gallery-grid figure {
+    grid-column: span 6;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: #fff;
+  }
+
+  /* image fit */
+  .gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+
+  .gallery-grid figure:hover img {
+    transform: scale(1.03);
+  }
+
+  /* 3-up on tablets */
+  @media (min-width: 576px) {
+    .gallery-grid figure {
+      grid-column: span 4;
+    }
+  }
+
+  /* 4-up on desktops */
+  @media (min-width: 992px) {
+    .gallery-grid figure {
+      grid-column: span 3;
+    }
+  }
+
+  /* optional: make a few tiles larger for a magazine feel */
+  .gallery-grid figure:nth-child(1),
+  .gallery-grid figure:nth-child(6) {
+    grid-column: span 6;
+  }
+  @media (max-width: 575.98px) {
+    .gallery-grid figure:nth-child(1),
+    .gallery-grid figure:nth-child(6) {
+      grid-column: span 6; /* keep full width on phones */
+    }
+  }
+  .gallery-grid figure:nth-child(1) img,
+  .gallery-grid figure:nth-child(6) img {
+    height: 300px;
   }
 }
